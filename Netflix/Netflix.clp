@@ -81,12 +81,265 @@
    
 (defrule choose-politics ""
 
-   (logical (Drama-Comedy Drama))
+   (logical (scifi-supernatural No))
 
    =>
 
    (assert (UI-state (display PoliticsQuestion)
                      (relation-asserted politics)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-gore ""
+
+   (logical (scifi-supernatural Yes))
+
+   =>
+
+   (assert (UI-state (display GoreQuestion)
+                     (relation-asserted gore)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-british ""
+
+   (logical (gore No))
+
+   =>
+
+   (assert (UI-state (display BritishQuestion)
+                     (relation-asserted british)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-zombies ""
+
+   (logical (gore Yes))
+
+   =>
+
+   (assert (UI-state (display ZombiesQuestion)
+                     (relation-asserted zombies)
+                     (response No)
+                     (valid-answers No Yes))))      
+                     
+(defrule choose-crying ""
+
+   (logical (politics No))
+
+   =>
+
+   (assert (UI-state (display CryingQuestion)
+                     (relation-asserted crying)
+                     (response No)
+                     (valid-answers No Yes))))                     
+                     
+(defrule choose-action ""
+
+   (logical (politics Yes))
+
+   =>
+
+   (assert (UI-state (display ActionQuestion)
+                     (relation-asserted action)
+                     (response No)
+                     (valid-answers No Yes))))                                 
+                     
+(defrule choose-strong-female ""
+
+   (logical (questionable-morals No))
+
+   =>
+
+   (assert (UI-state (display StrongFemaleshQuestion)
+                     (relation-asserted strong-female)
+                     (response No)
+                     (valid-answers No Yes))))           
+                     
+(defrule choose-friend-family ""
+
+   (logical (questionable-morals Yes))
+
+   =>
+
+   (assert (UI-state (display FriendFamilyQuestion)
+                     (relation-asserted friend-family)
+                     (response Friends)
+                     (valid-answers Friends Family))))      
+                     
+(defrule choose-workplace-humor ""
+
+   (logical (strong-female No))
+
+   =>
+
+   (assert (UI-state (display WorkplaceHumorQuestion)
+                     (relation-asserted workplace-humor)
+                     (response No)
+                     (valid-answers No Yes))))              
+                     
+(defrule choose-franco-and-rogen ""
+
+   (logical (workplace-humor No))
+
+   =>
+
+   (assert (UI-state (display FrancoAndRogenQuestion)
+                     (relation-asserted franco-and-rogen)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-bar-cafe ""
+
+   (logical (franco-and-rogen No))
+
+   =>
+
+   (assert (UI-state (display BarCafeQuestion)
+                     (relation-asserted bar-cafe)
+                     (response Bar)
+                     (valid-answers Bar Cafe))))
+                     
+(defrule choose-drugs ""
+
+   (logical (franco-and-rogen No))
+
+   =>
+
+   (assert (UI-state (display DrugsQuestion)
+                     (relation-asserted drugs)
+                     (response No)
+                     (valid-answers No Yes))))
+
+(defrule choose-drugs ""
+
+   (logical (strong-female Yes))
+
+   =>
+
+   (assert (UI-state (display DrugsQuestion)
+                     (relation-asserted drugs)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-football ""
+
+   (logical (crying Yes))
+
+   =>
+
+   (assert (UI-state (display FootballQuestion)
+                     (relation-asserted football)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-crime ""
+
+   (logical (crying No))
+
+   =>
+
+   (assert (UI-state (display CrimeQuestion)
+                     (relation-asserted crime)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-hospitals ""
+
+   (logical (football No))
+
+   =>
+
+   (assert (UI-state (display HospitalsQuestion)
+                     (relation-asserted hospitals)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-tina-amy ""
+
+   (logical (football No))
+
+   =>
+
+   (assert (UI-state (display TinaAmyQuestion)
+                     (relation-asserted tina-amy)
+                     (response Tina)
+                     (valid-answers Tina Amy))))
+                     
+(defrule choose-tina-amy ""
+
+   (logical (drugs No))
+
+   =>
+
+   (assert (UI-state (display TinaAmyQuestion)
+                     (relation-asserted tina-amy)
+                     (response Tina)
+                     (valid-answers Tina Amy))))
+                     
+(defrule choose-criminals ""
+
+   (logical (crime Yes))
+
+   =>
+
+   (assert (UI-state (display CriminalsQuestion)
+                     (relation-asserted criminals)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-romance ""
+
+   (logical (action No))
+
+   =>
+
+   (assert (UI-state (display RomanceQuestion)
+                     (relation-asserted romance)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-optimistic-cynical ""
+
+   (logical (romance No))
+
+   =>
+
+   (assert (UI-state (display OptimisticCynicalQuestion)
+                     (relation-asserted optimistic-cynical)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-meth ""
+
+   (logical (crime No))
+
+   =>
+
+   (assert (UI-state (display MethQuestion)
+                     (relation-asserted meth)
+                     (response No)
+                     (valid-answers No Yes))))
+                     
+(defrule choose-forensics-psychology ""
+
+   (logical (criminals No))
+
+   =>
+
+   (assert (UI-state (display ForensicsPsychologyQuestion)
+                     (relation-asserted forensic-psychology)
+                     (response Forensics)
+                     (valid-answers Forensics Psychology))))
+                     
+(defrule choose-vampires ""
+
+   (logical (zombies No))
+
+   =>
+
+   (assert (UI-state (display VampiresQuestion)
+                     (relation-asserted vampires)
                      (response No)
                      (valid-answers No Yes))))
 
