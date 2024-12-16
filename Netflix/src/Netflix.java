@@ -243,7 +243,7 @@ class Netflix implements ActionListener
       
       wrapLabelText(runtimeLabel,theText);
       
-      //displayLabel.setIcon(new ImageIcon("src\\resources\\MDRUM_GREAT_WHITE_CLOSE-UP-10-scaled.jpg"));
+      //displayLabel.setIcon(new ImageIcon("src\\resources\\img.jpg"));
 
       
       executionThread = null;
