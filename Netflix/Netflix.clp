@@ -328,7 +328,7 @@
    =>
 
    (assert (UI-state (display ForensicsPsychologyQuestion)
-                     (relation-asserted forensic-psychology)
+                     (relation-asserted forensics-psychology)
                      (response Forensics)
                      (valid-answers Forensics Psychology))))
                      
@@ -375,7 +375,7 @@
 
    (assert (UI-state (display Sunny)
                      (runtime RuntimeSunny)
-                     (state final)))
+                     (state final))))
                      
 (defrule Family-end ""
 
@@ -419,11 +419,11 @@
                      
 (defrule action-yes-end ""
 
-   (logical (action No))
+   (logical (action Yes))
    
    =>
 
-   (assert (UI-state (display 24)
+   (assert (UI-state (display TV24)
                      (runtime Runtime24)
                      (state final))))
                      
@@ -443,8 +443,8 @@
    
    =>
 
-   (assert (UI-state (display Parks&Rec)
-                     (runtime RuntimeParks&Rec)
+   (assert (UI-state (display ParksNRec)
+                     (runtime RuntimeParksNRec)
                      (state final))))
                      
 (defrule tina-end ""
@@ -519,7 +519,7 @@
                      
 (defrule meth-yes-end ""
 
-   (logical (meth yes))
+   (logical (meth Yes))
    
    =>
 
@@ -533,8 +533,8 @@
    
    =>
 
-   (assert (UI-state (display Freaks&Geeks)
-                     (runtime RuntimeFreaks&Geeks)
+   (assert (UI-state (display FreaksNGeeks)
+                     (runtime RuntimeFreaksNGeeks)
                      (state final))))
                      
 (defrule zombies-yes-end ""
