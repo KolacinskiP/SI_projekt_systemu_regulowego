@@ -354,7 +354,7 @@
    =>
 
    (assert (UI-state (display OITNB)
-   					 (runtime RuntimeOITNB)
+                     (runtime RuntimeOITNB)
                      (state final))))
 
 (defrule Town-end ""
@@ -364,7 +364,7 @@
    =>
 
    (assert (UI-state (display GilmoreGirls)
-   					 (runtime RuntimeGilmoreGirls)
+                     (runtime RuntimeGilmoreGirls)
                      (state final))))
                      
 (defrule Friends-end ""
@@ -374,7 +374,7 @@
    =>
 
    (assert (UI-state (display Sunny)
-   					 (runtime RuntimeSunny)
+                     (runtime RuntimeSunny)
                      (state final))))
                      
 (defrule workplace-humor-yes-end ""
@@ -384,7 +384,7 @@
    =>
 
    (assert (UI-state (display TheOffice)
-   					 (runtime RuntimeTheOffice)
+                     (runtime RuntimeTheOffice)
                      (state final))))
                      
 (defrule british-yes-end ""
@@ -394,7 +394,7 @@
    =>
 
    (assert (UI-state (display DrWho)
-   					 (runtime RuntimeDrWho)
+                     (runtime RuntimeDrWho)
                      (state final))))
                      
 (defrule british-no-end ""
@@ -404,7 +404,7 @@
    =>
 
    (assert (UI-state (display Lost)
-   					 (runtime RuntimeLost)
+                     (runtime RuntimeLost)
                      (state final))))
                      
 (defrule action-yes-end ""
@@ -414,7 +414,7 @@
    =>
 
    (assert (UI-state (display 24)
-   					 (runtime Runtime24)
+                     (runtime Runtime24)
                      (state final))))
                      
 (defrule drugs-yes-end ""
@@ -424,7 +424,7 @@
    =>
 
    (assert (UI-state (display Weeds)
-   					 (runtime RuntimeWeeds)
+                     (runtime RuntimeWeeds)
                      (state final))))
                      
 (defrule amy-end ""
@@ -434,7 +434,7 @@
    =>
 
    (assert (UI-state (display Parks&Rec)
-   					 (runtime RuntimeParks&Rec)
+                     (runtime RuntimeParks&Rec)
                      (state final))))
                      
 (defrule tina-end ""
@@ -444,7 +444,7 @@
    =>
 
    (assert (UI-state (display 30Rock)
-   					 (runtime Runtime30Rock)
+                     (runtime Runtime30Rock)
                      (state final))))
                      
 (defrule football-yes-end ""
@@ -454,7 +454,7 @@
    =>
 
    (assert (UI-state (display Friday)
-   					 (runtime RuntimeFriday)
+                     (runtime RuntimeFriday)
                      (state final))))
                      
 (defrule hospitals-no-end ""
@@ -464,7 +464,7 @@
    =>
 
    (assert (UI-state (display Parenthood)
-   					 (runtime RuntimeParenthood)
+                     (runtime RuntimeParenthood)
                      (state final))))
                      
 (defrule hospitals-yes-end ""
@@ -474,7 +474,7 @@
    =>
 
    (assert (UI-state (display GraysAnatomy)
-   					 (runtime RuntimeGraysAnatomy)
+                     (runtime RuntimeGraysAnatomy)
                      (state final))))
                      
 (defrule criminals-yes-end ""
@@ -484,7 +484,7 @@
    =>
 
    (assert (UI-state (display Dexter)
-   					 (runtime RuntimeDexter)
+                     (runtime RuntimeDexter)
                      (state final))))
                      
 (defrule romance-yes-end ""
@@ -494,7 +494,7 @@
    =>
 
    (assert (UI-state (display Scandal)
-   					 (runtime RuntimeScandal)
+                     (runtime RuntimeScandal)
                      (state final))))
                      
 (defrule meth-no-end ""
@@ -504,7 +504,7 @@
    =>
 
    (assert (UI-state (display MadMen)
-   					 (runtime RuntimeMadMen)
+                     (runtime RuntimeMadMen)
                      (state final))))
                      
 (defrule meth-yes-end ""
@@ -514,7 +514,7 @@
    =>
 
    (assert (UI-state (display BreakingBad)
-   					 (runtime RuntimeBreakingBad)
+                     (runtime RuntimeBreakingBad)
                      (state final))))
                      
 (defrule franco-and-rogen-yes-end ""
@@ -524,7 +524,7 @@
    =>
 
    (assert (UI-state (display Freaks&Geeks)
-   					 (runtime RuntimeFreaks&Geeks)
+                     (runtime RuntimeFreaks&Geeks)
                      (state final))))
                      
 (defrule zombies-yes-end ""
@@ -534,7 +534,7 @@
    =>
 
    (assert (UI-state (display TheWalkingDead)
-   					 (runtime RuntimeTheWalkingDead)
+                     (runtime RuntimeTheWalkingDead)
                      (state final))))
                      
 (defrule vampires-no-end ""
@@ -544,7 +544,7 @@
    =>
 
    (assert (UI-state (display Supernatural)
-   					 (runtime RuntimeSupernatural)
+                     (runtime RuntimeSupernatural)
                      (state final))))
                      
 (defrule vampires-yes-end ""
@@ -554,7 +554,7 @@
    =>
 
    (assert (UI-state (display TheVampireDiaries)
-   					 (runtime RuntimeTheVampireDiaries)
+                     (runtime RuntimeTheVampireDiaries)
                      (state final))))
                      
 (defrule optimistic-end ""
@@ -564,7 +564,7 @@
    =>
 
    (assert (UI-state (display TheWestWing)
-   					 (runtime RuntimeTheWestWing)
+                     (runtime RuntimeTheWestWing)
                      (state final))))
                      
 (defrule cynical-end ""
@@ -574,7 +574,7 @@
    =>
 
    (assert (UI-state (display HouseOfCards)
-   					 (runtime RuntimeHouseOfCards)
+                     (runtime RuntimeHouseOfCards)
                      (state final))))
                      
 (defrule bar-end ""
@@ -584,7 +584,7 @@
    =>
 
    (assert (UI-state (display HowIMetYourMother)
-   					 (runtime RuntimeHowIMetYourMother)
+                     (runtime RuntimeHowIMetYourMother)
                      (state final))))
                      
 (defrule cafe-end ""
@@ -594,7 +594,7 @@
    =>
 
    (assert (UI-state (display Friends)
-   					 (runtime RuntimeFriends)
+                     (runtime RuntimeFriends)
                      (state final))))
                      
 (defrule forensics-end ""
@@ -604,7 +604,7 @@
    =>
 
    (assert (UI-state (display CISMiami)
-   					 (runtime RuntimeCISMiami)
+                     (runtime RuntimeCISMiami)
                      (state final))))
                      
 (defrule psychology-end ""
@@ -614,7 +614,7 @@
    =>
 
    (assert (UI-state (display CriminalMinds)
-   					 (runtime RuntimeCriminalMinds)
+                     (runtime RuntimeCriminalMinds)
                      (state final))))
                      
 (defrule NOTHING ""
