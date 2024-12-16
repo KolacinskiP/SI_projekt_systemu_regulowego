@@ -307,8 +307,8 @@
 
    (assert (UI-state (display OptimisticCynicalQuestion)
                      (relation-asserted optimistic-cynical)
-                     (response No)
-                     (valid-answers No Yes))))
+                     (response Optimistic)
+                     (valid-answers Optimistic Cynical))))
                      
 (defrule choose-meth ""
 
@@ -373,8 +373,248 @@
    
    =>
 
-   (assert (UI-state (display GilmoreGirls)
-   					 (runtime RuntimeGilmoreGirls)
+   (assert (UI-state (display Sunny)
+   					 (runtime RuntimeSunny)
+                     (state final))))
+                     
+(defrule workplace-humor-yes-end ""
+
+   (logical (workplace-humor Yes))
+   
+   =>
+
+   (assert (UI-state (display TheOffice)
+   					 (runtime RuntimeTheOffice)
+                     (state final))))
+                     
+(defrule british-yes-end ""
+
+   (logical (british Yes))
+   
+   =>
+
+   (assert (UI-state (display DrWho)
+   					 (runtime RuntimeDrWho)
+                     (state final))))
+                     
+(defrule british-no-end ""
+
+   (logical (british No))
+   
+   =>
+
+   (assert (UI-state (display Lost)
+   					 (runtime RuntimeLost)
+                     (state final))))
+                     
+(defrule action-yes-end ""
+
+   (logical (action No))
+   
+   =>
+
+   (assert (UI-state (display 24)
+   					 (runtime Runtime24)
+                     (state final))))
+                     
+(defrule drugs-yes-end ""
+
+   (logical (drugs Yes))
+   
+   =>
+
+   (assert (UI-state (display Weeds)
+   					 (runtime RuntimeWeeds)
+                     (state final))))
+                     
+(defrule amy-end ""
+
+   (logical (tina-amy Amy))
+   
+   =>
+
+   (assert (UI-state (display Parks&Rec)
+   					 (runtime RuntimeParks&Rec)
+                     (state final))))
+                     
+(defrule tina-end ""
+
+   (logical (tina-amy Tina))
+   
+   =>
+
+   (assert (UI-state (display 30Rock)
+   					 (runtime Runtime30Rock)
+                     (state final))))
+                     
+(defrule football-yes-end ""
+
+   (logical (football Yes))
+   
+   =>
+
+   (assert (UI-state (display Friday)
+   					 (runtime RuntimeFriday)
+                     (state final))))
+                     
+(defrule hospitals-no-end ""
+
+   (logical (hospitals No))
+   
+   =>
+
+   (assert (UI-state (display Parenthood)
+   					 (runtime RuntimeParenthood)
+                     (state final))))
+                     
+(defrule hospitals-yes-end ""
+
+   (logical (hospitals Yes))
+   
+   =>
+
+   (assert (UI-state (display GraysAnatomy)
+   					 (runtime RuntimeGraysAnatomy)
+                     (state final))))
+                     
+(defrule criminals-yes-end ""
+
+   (logical (criminals Yes))
+   
+   =>
+
+   (assert (UI-state (display Dexter)
+   					 (runtime RuntimeDexter)
+                     (state final))))
+                     
+(defrule romance-yes-end ""
+
+   (logical (romance Yes))
+   
+   =>
+
+   (assert (UI-state (display Scandal)
+   					 (runtime RuntimeScandal)
+                     (state final))))
+                     
+(defrule meth-no-end ""
+
+   (logical (meth No))
+   
+   =>
+
+   (assert (UI-state (display MadMen)
+   					 (runtime RuntimeMadMen)
+                     (state final))))
+                     
+(defrule meth-yes-end ""
+
+   (logical (meth yes))
+   
+   =>
+
+   (assert (UI-state (display BreakingBad)
+   					 (runtime RuntimeBreakingBad)
+                     (state final))))
+                     
+(defrule franco-and-rogen-yes-end ""
+
+   (logical (franco-and-rogen Yes))
+   
+   =>
+
+   (assert (UI-state (display Freaks&Geeks)
+   					 (runtime RuntimeFreaks&Geeks)
+                     (state final))))
+                     
+(defrule zombies-yes-end ""
+
+   (logical (zombies Yes))
+   
+   =>
+
+   (assert (UI-state (display TheWalkingDead)
+   					 (runtime RuntimeTheWalkingDead)
+                     (state final))))
+                     
+(defrule vampires-no-end ""
+
+   (logical (vampires No))
+   
+   =>
+
+   (assert (UI-state (display Supernatural)
+   					 (runtime RuntimeSupernatural)
+                     (state final))))
+                     
+(defrule vampires-yes-end ""
+
+   (logical (vampires Yes))
+   
+   =>
+
+   (assert (UI-state (display TheVampireDiaries)
+   					 (runtime RuntimeTheVampireDiaries)
+                     (state final))))
+                     
+(defrule optimistic-end ""
+
+   (logical (optimistic-cynical Optimistic))
+   
+   =>
+
+   (assert (UI-state (display TheWestWing)
+   					 (runtime RuntimeTheWestWing)
+                     (state final))))
+                     
+(defrule cynical-end ""
+
+   (logical (optimistic-cynical Cynical))
+   
+   =>
+
+   (assert (UI-state (display HouseOfCards)
+   					 (runtime RuntimeHouseOfCards)
+                     (state final))))
+                     
+(defrule bar-end ""
+
+   (logical (bar-cafe Bar))
+   
+   =>
+
+   (assert (UI-state (display HowIMetYourMother)
+   					 (runtime RuntimeHowIMetYourMother)
+                     (state final))))
+                     
+(defrule cafe-end ""
+
+   (logical (bar-cafe Cafe))
+   
+   =>
+
+   (assert (UI-state (display Friends)
+   					 (runtime RuntimeFriends)
+                     (state final))))
+                     
+(defrule forensics-end ""
+
+   (logical (forensics-psychology Forensics))
+   
+   =>
+
+   (assert (UI-state (display CISMiami)
+   					 (runtime RuntimeCISMiami)
+                     (state final))))
+                     
+(defrule psychology-end ""
+
+   (logical (forensics-psychology Psychology))
+   
+   =>
+
+   (assert (UI-state (display CriminalMinds)
+   					 (runtime RuntimeCriminalMinds)
                      (state final))))
                      
 (defrule NOTHING ""
