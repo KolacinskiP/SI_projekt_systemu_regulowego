@@ -156,14 +156,14 @@
                      (response No)
                      (valid-answers No Yes))))           
                      
-(defrule choose-friend-family ""
+(defrule choose-friends-family ""
 
    (logical (questionable-morals Yes))
 
    =>
 
-   (assert (UI-state (display FriendFamilyQuestion)
-                     (relation-asserted friend-family)
+   (assert (UI-state (display FriendsFamilyQuestion)
+                     (relation-asserted friends-family)
                      (response Friends)
                      (valid-answers Friends Family))))      
                      
@@ -360,6 +360,16 @@
 (defrule Town-end ""
 
    (logical (town-prison Town))
+   
+   =>
+
+   (assert (UI-state (display GilmoreGirls)
+   					 (runtime RuntimeGilmoreGirls)
+                     (state final))))
+                     
+(defrule Friends-end ""
+
+   (logical (friends-family Friends))
    
    =>
 
