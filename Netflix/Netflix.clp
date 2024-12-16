@@ -375,6 +375,16 @@
 
    (assert (UI-state (display Sunny)
                      (runtime RuntimeSunny)
+                     (state final)))
+                     
+(defrule Family-end ""
+
+   (logical (friends-family Family))
+   
+   =>
+
+   (assert (UI-state (display ArrestedDevelopment)
+                     (runtime RuntimeArrestedDevelopment)
                      (state final))))
                      
 (defrule workplace-humor-yes-end ""
